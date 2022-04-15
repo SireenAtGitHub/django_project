@@ -14,7 +14,6 @@ from pathlib import Path
 import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-import storages.backends.s3boto3
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
