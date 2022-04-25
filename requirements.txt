@@ -20,3 +20,5 @@ s3transfer
 six
 urllib3
 whitenoise
+PyPDF2
+reportlab

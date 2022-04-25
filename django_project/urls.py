@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from users import views as user_views
+from testPDF import views as pdf_views
 from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
@@ -39,6 +40,7 @@ urlpatterns = [
          name='password_reset_complete'),
     path('profile/', user_views.profile, name='profile'),
     path('', include('blog.urls')),
+    path('invoice/', pdf_views.invoice, name='pdf')
 
 ]
 
