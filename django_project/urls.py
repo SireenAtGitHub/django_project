@@ -40,7 +40,7 @@ urlpatterns = [
          name='password_reset_complete'),
     path('profile/', user_views.profile, name='profile'),
     path('', include('blog.urls')),
-    path('invoice/', pdf_views.invoice),
+    path('invoice/', pdf_views.invoice, name='pdf'),
 
 ]
 
