@@ -8,8 +8,6 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.pdfmetrics import registerFontFamily
 from reportlab.pdfbase.ttfonts import TTFont
-from django.templatetags.static import static
-from django.contrib.staticfiles import urls
 
 
 def invoice(request):
