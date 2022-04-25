@@ -51,6 +51,6 @@ def invoice(request):
 
 
 def register_font():
-    pdfmetrics.registerFont(TTFont('CenturyGothicBold',  os.getcwd()+'\static\CenturyGothicBold.ttf'))
-    pdfmetrics.registerFont(TTFont('CenturyGothicRegular', os.getcwd()+'\static\CenturyGothicRegular.ttf'))
+    pdfmetrics.registerFont(TTFont('CenturyGothicBold',  os.path.abspath(os.getcwd()+'/static/CenturyGothicBold.ttf')))
+    pdfmetrics.registerFont(TTFont('CenturyGothicRegular', os.path.abspath(os.getcwd()+'\static\CenturyGothicRegular.ttf')))
     registerFontFamily('CenturyGothic', normal='CGRegular', bold='CGBold')
